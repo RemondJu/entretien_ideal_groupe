@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="stylesheet" href="https://bootswatch.com/4/materia/bootstrap.min.css">
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5 p-0">
+        <a class="navbar-brand" href="https://www.ideal-groupe.com/">
+          <img src="https://scontent-cdt1-1.xx.fbcdn.net/v/t1.0-9/15825952_761647827321494_2306513920663312996_n.png?_nc_cat=105&_nc_ht=scontent-cdt1-1.xx&oh=3a4938eeed3d62f5e37333bf8d81dfb5&oe=5CA39B44" width="80px" alt="Ideal groupe logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor03">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/RemondJu">Github Julien Rémond</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
